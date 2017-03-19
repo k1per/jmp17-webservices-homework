@@ -1,0 +1,2 @@
+include 'spring-boot-rest'
+include 'jersey-client'
