@@ -108,7 +108,7 @@ public class JerseyClient {
         System.out.println("Getting logo");
         WebResource resource = client.resource("http://localhost:8080/users/" + userId + "/logo");
         File file = resource.get(File.class);
-        file.renameTo(new File(logoDownloadPath));
+        file.renameTo(new File(logoDownloadPath + "/downloaded.jpg"));
         System.out.println("Downloaded file to " + logoDownloadPath + "\n");
     }
 
